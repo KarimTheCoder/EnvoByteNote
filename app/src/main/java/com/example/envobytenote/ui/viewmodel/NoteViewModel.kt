@@ -15,20 +15,15 @@ import kotlinx.coroutines.launch
 import java.util.Date
 import javax.inject.Inject
 
+/* Developers note
+ * Using UI state data classes instead of MutableState keeps all screen states in one immutable object,
+ * ensuring a single source of truth, easier maintenance, and better Compose reactivity.
+ */
+
 @HiltViewModel
 class NoteViewModel @Inject constructor(
     private val repository: NoteRepository
 ) : ViewModel() {
-
-    private val _notesState = MutableStateFlow<List<Note>>(emptyList())
-    val notesState: StateFlow<List<Note>> = _notesState
-
-    private val _favoriteNotesState = MutableStateFlow<List<Note>>(emptyList())
-    val favoriteNotesState: StateFlow<List<Note>> = _favoriteNotesState
-
-    private val _searchResultsState = MutableStateFlow<List<Note>>(emptyList())
-    val searchResultsState: StateFlow<List<Note>> = _searchResultsState
-
 
     private val _uiState = MutableStateFlow(HomeUiState())
     val uiState: StateFlow<HomeUiState> = _uiState.asStateFlow()
@@ -84,70 +79,7 @@ class NoteViewModel @Inject constructor(
         loadAllNotes()
     }
 
-    fun updateNote(note: Note) = viewModelScope.launch {
-        repository.updateNote(note)
-        loadAllNotes()
-    }
 
-    fun deleteNote(note: Note) = viewModelScope.launch {
-        repository.deleteNote(note)
-        loadAllNotes()
-    }
-
-
-
-
-
-//
-//    // Insert note
-//    fun insertNote(note: Note) {
-//        viewModelScope.launch {
-//            repository.insertNote(note)
-//            loadAllNotes() // refresh list
-//        }
-//    }
-//
-//    // Update note
-//    fun updateNote(note: Note) {
-//        viewModelScope.launch {
-//            repository.updateNote(note)
-//            loadAllNotes()
-//        }
-//    }
-//
-//    // Update favorite
-//    fun updateFavorite(id: Long, isFav: Boolean) {
-//        viewModelScope.launch {
-//            repository.updateFavorite(id, isFav)
-//            loadFavoriteNotes()
-//        }
-//    }
-//
-//    // Delete note
-//    fun deleteNote(note: Note) {
-//        viewModelScope.launch {
-//            repository.deleteNote(note)
-//            loadAllNotes()
-//        }
-//    }
-//
-//    // Load all notes
-//    fun loadAllNotes() {
-//        viewModelScope.launch {
-//            repository.getAllNotes().collect { notes ->
-//                _notesState.value = notes
-//            }
-//        }
-//    }
-//
-//    // Load favorite notes
-//    fun loadFavoriteNotes() {
-//        viewModelScope.launch {
-//            repository.getFavoriteNotes().collect { favorites ->
-//                _favoriteNotesState.value = favorites
-//            }
-//        }
-//    }
 
 
     private val _editNoteUiState = MutableStateFlow(EditNoteUiState())
@@ -205,38 +137,6 @@ class NoteViewModel @Inject constructor(
             onBack()
         }
     }
-
-    // Get note by id
-    suspend fun getNoteById(noteId: Long): Note? {
-        return repository.getNoteById(noteId)
-    }
-
-    // Search notes
-//    fun searchNotes(query: String) {
-//        viewModelScope.launch {
-//            repository.searchNotes(query).collect { results ->
-//                _searchResultsState.value = results
-//            }
-//        }
-//    }
-
-
-    private val _currentNote = MutableStateFlow<Note?>(null)
-    val currentNote: StateFlow<Note?> = _currentNote
-
-    fun loadNoteById(noteId: Long) {
-        if (noteId == -1L) {
-            _currentNote.value = null // new note
-            return
-        }
-
-        viewModelScope.launch {
-            _currentNote.value = repository.getNoteById(noteId)
-        }
-    }
-
-
-
 
 
 }

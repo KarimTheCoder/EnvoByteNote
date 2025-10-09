@@ -16,21 +16,6 @@ private val DarkColorScheme = darkColorScheme(
     secondary = PurpleGrey80,
     tertiary = Pink80
 )
-//
-//private val DarkColorScheme = darkColorScheme(
-//    primary = Blue80,
-//    secondary = Green80,
-//    tertiary = Orange80,
-//    background = Gray40,
-//    surface = Gray40,
-//    onPrimary = White80,
-//    onSecondary = White80,
-//    onTertiary = White80,
-//    onBackground = White80,
-//    onSurface = White80,
-//    error = Red80,
-//    onError = White80
-//)
 
 
 private val LightColorScheme = lightColorScheme(
@@ -48,20 +33,6 @@ private val LightColorScheme = lightColorScheme(
     onSurface = Color(0xFF1C1B1F),
     */
 )
-//private val LightColorScheme = lightColorScheme(
-//    primary = Blue40,
-//    secondary = Green40,
-//    tertiary = Orange40,
-//    background = White80,
-//    surface = White80,
-//    onPrimary = White40,
-//    onSecondary = White40,
-//    onTertiary = White40,
-//    onBackground = Gray80,
-//    onSurface = Gray80,
-//    error = Red40,
-//    onError = White40
-//)
 
 @Composable
 fun EnvoByteNoteTheme(
