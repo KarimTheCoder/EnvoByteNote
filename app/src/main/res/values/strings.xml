@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">EnvoByte Note</string>
+
+
+
+    <!-- res/values/strings.xml -->
+    <string name="note_welcome_title">🎉 Welcome to Envobyte Note</string>
+    <string name="note_welcome_desc">Envobyte Note is a clean and minimal note-taking app that helps you capture your thoughts instantly. Create, edit, search, and organize your notes with ease. Mark your favorites, switch between light and dark themes, and enjoy a distraction-free writing experience.</string>
+
+    <string name="note_tips_title">💡 How to use</string>
+    <string name="note_tips_desc">
+    1. Tap “+” to create a new note.\n2. Add a title and description for your note.\n3. Use the segmented buttons at the top to switch between All Notes and Favorites.\n4. Tap the ❤️ icon to favorite important notes.\n5. Enable Dark Mode for a comfortable night-time writing experience.\n6. Edit or delete notes anytime with just one tap.
+</string>
+
+    <string name="about_envobyte_title">💼 About Envobyte</string>
+    <string name="about_envobyte_desc">Envobyte is a dynamic IT company specializing in custom web and mobile app development, digital marketing, and branding services. Founded in 2015 and headquartered in Khulna, Bangladesh, Envobyte has grown into a global digital solutions provider, serving clients across North America, Europe, and beyond.</string>
+
+
+
+</resources>
