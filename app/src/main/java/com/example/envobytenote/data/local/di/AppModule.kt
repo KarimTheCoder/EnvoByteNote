@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.room.Room
 import com.example.envobytenote.data.local.room.AppDatabase
 import com.example.envobytenote.data.local.room.NoteDao
-import com.example.envobytenote.data.local.room.NoteRepository
+import com.example.envobytenote.data.local.repo.NoteRepository
 import com.example.envobytenote.util.ThemePreference
 import dagger.Module
 import dagger.Provides

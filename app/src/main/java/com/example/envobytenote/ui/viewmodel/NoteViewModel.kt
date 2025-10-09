@@ -3,7 +3,7 @@ package com.example.envobytenote.ui.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.envobytenote.data.local.room.Note
-import com.example.envobytenote.data.local.room.NoteRepository
+import com.example.envobytenote.data.local.repo.NoteRepository
 import com.example.envobytenote.ui.screens.edit.EditNoteUiState
 import com.example.envobytenote.ui.screens.home.HomeUiState
 import dagger.hilt.android.lifecycle.HiltViewModel

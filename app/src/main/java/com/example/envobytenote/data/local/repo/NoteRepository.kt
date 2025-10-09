@@ -1,5 +1,7 @@
-package com.example.envobytenote.data.local.room
+package com.example.envobytenote.data.local.repo
 
+import com.example.envobytenote.data.local.room.Note
+import com.example.envobytenote.data.local.room.NoteDao
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 import javax.inject.Singleton
