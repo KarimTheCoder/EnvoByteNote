@@ -1,6 +1,6 @@
 # 📝 Envobyte Note
 
-![Envobyte Note Hero Image](https://your-image-link-here.com/hero.png)
+![Envobyte Note Hero Image]([https://your-image-link-here.com/hero.png](https://i.postimg.cc/fb0N6WbJ/Hero.png))
 
 > **Envobyte Note** — where your thoughts stay clear, organized, and ready whenever inspiration strikes.
 
