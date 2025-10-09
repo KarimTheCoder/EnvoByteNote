@@ -14,8 +14,8 @@ Designed for simplicity and speed, it helps you focus on your ideas — not on m
 - 🧠 **Clean & Minimal UI** — distraction-free design built with Compose.  
 - 🔍 **Smart Search** — instantly find what you’ve written.  
 - ⭐ **Favorites** — keep your most important notes easily accessible.  
-- 🎨 **Dynamic Theming** — adapts to your device theme.  
-- ☁️ **Future Ready** — planned sync & backup support.  
+- 🎨 **Dynamic Theming** — Easiy switch to dark or light mode.  
+ 
 
 ---
 
@@ -35,7 +35,7 @@ Designed for simplicity and speed, it helps you focus on your ideas — not on m
 - **Dependency Injection:** Hilt  
 - **Database:** Room  
 - **Navigation:** Compose Navigation  
-- **State Management:** StateFlow + ViewModel  
+- **State Management:** UI state data class+StateFlow + ViewModel  
 
 ---
 
