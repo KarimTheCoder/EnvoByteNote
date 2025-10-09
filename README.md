@@ -23,7 +23,7 @@ Designed for simplicity and speed, it helps you focus on your ideas — not on m
 
 | Home Screen | Note Editor | Favorites |
 |--------------|--------------|-----------|
-| ![Home](https://your-image-link.com/home.png) | ![Editor](https://your-image-link.com/editor.png) | ![Favorites](https://your-image-link.com/fav.png) |
+| ![Home](https://i.postimg.cc/V6Q81yS5/Home.jpg) | ![Editor](https://i.postimg.cc/XJSb3MZq/Edit.jpg) | ![Favorites](https://i.postimg.cc/3R5T7Myd/Favorite.jpg) |
 
 ---
 
