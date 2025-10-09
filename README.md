@@ -39,6 +39,13 @@ Designed for simplicity and speed, it helps you focus on your ideas — not on m
 
 ---
 
+## 📥 Download APK
+
+[Download Envobyte Note APK](https://github.com/KarimTheCoder/EnvoByteNote/releases/download/v1.0/app-debug.apk)
+
+
+
+
 ## 🏗️ Project Setup
 
 1. Clone the repository:
