@@ -50,4 +50,4 @@ Designed for simplicity and speed, it helps you focus on your ideas — not on m
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/envobyte-note.git
+   git clone https://github.com/KarimTheCoder/envobyte-note.git
